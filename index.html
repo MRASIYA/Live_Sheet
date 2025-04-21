@@ -56,38 +56,17 @@
         }
 
         h2 {
-        text-align: center;
-        color: #333;
-        font-size: 36px; /* Increased font size for better visibility */
-        font-weight: bold;
-        text-transform: uppercase;
-        background: linear-gradient(45deg, #4CAF50, #45a049);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    </style>
-</head>
-<body>
+            text-align: center;
+            color: #333;
+            font-size: 36px; /* Increased font size for better visibility */
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
 
-    <div class="form-container">
-        <h2>RMC Live Enter Data</h2>
-        <form id="dataForm">
-            <input type="text" id="name" name="name" placeholder="Enter Name" required>
-            <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity" required>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <!-- Success Message Popup -->
-    <div id="successPopup" class="popup">
-        <div class="popup-content">
-            <p>Form submitted successfully!</p>
-            <button id="closePopup">Close</button>
-        </div>
-    </div>
-
-    <style>
         /* Popup styles */
         .popup {
             display: none;
@@ -128,7 +107,49 @@
         .popup-content button:hover {
             background-color: #45a049;
         }
+
+        /* View SHEET button styles */
+        .view-sheet-button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .view-sheet-button:hover {
+            background-color: #45a049;
+        }
     </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>RMC Live Enter Data</h2>
+        <form id="dataForm">
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity" required>
+            <input type="submit" value="ENTER">
+        </form>
+
+        <!-- View SHEET Button -->
+        <a href="https://mrasiya.github.io/Live_Sheet_Viwe-" target="_blank" class="view-sheet-button">View SHEET</a>
+    </div>
+
+    <!-- Success Message Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <p>Form submitted successfully!</p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
 
     <script>
         // Handle form submission
